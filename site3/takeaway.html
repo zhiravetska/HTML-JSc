@@ -1,0 +1,61 @@
+<!DOCTTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Заказ еды на вынос</title>
+        <link href="styles/2.1.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <div class="pos1"><img src="pictures/sushi.jpg"></div>
+            <div class="pos2">
+                <h1>Йокогама</h1>
+            </div>
+            <div class="pos3">
+                <h1>Суши-бар</h1>
+            </div>
+        </header>
+        <main>
+            <h2>Заказ еды на вынос</h2>
+            <p>
+            <form action="mailto:znastja@latnet.lv" method="post" enctype="text/plain">
+                <p><label for="dishes">Что желаете заказать?</label><br>
+                    <select name="dishes" id="dishes" size="6" multiple>
+                        <optgroup label="Сашими">
+                            <option value="unagi">Унаги</option>
+                            <option value="hamachi">Хамачи</option>
+                        </optgroup>
+                        <optgroup label="Суши">
+                            <option value="chukka">Чукка</option>
+                            <option value="maguro">Магуро</option>
+                            <option value="tobiko">Тобико</option>
+                        </optgroup>
+                        <optgroup label="Роллы">
+                            <option value="kunsej">Кунсэй батакон</option>
+                            <option value="arigato">Аригато</option>
+                            <option value="mexico">Мексиканский</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <label for="phone">Ваш номер телефона</label><br>
+                <input type="text" name="phone" id="phone" required></p>
+                <p>Введите текст сообщения</p>
+                <textarea cols="40" rows="8" wrap="hard">Здравствуйте!</textarea>
+
+                <p>Выберите Word файл<br>
+                    <input type="file" accept=".doc, .docx">
+                </p>
+                <p><input type="image" src="pictures/order_button.jpg" width="100"></p>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;читатели книги &laquo;HTML и
+                CSS&raquo;<br>Все права защищены.</p>
+        </footer>
+
+    </body>
+
+
+    </html>
