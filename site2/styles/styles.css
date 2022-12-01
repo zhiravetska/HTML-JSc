@@ -1,0 +1,149 @@
+body {
+    margin: 0px;
+    background-image: url(../media/bg1.jpg), url(../media/bg2.jpg), url(../media/bg3.jpg), url(../media/main_bg.jpg);
+    background-position: 10pt 8pt, 10pt 76pt, 10pt 144pt, 0pt 0pt;
+    background-size: 60pt, 60pt, 60pt, cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+body {
+    counter-reset: ch1;
+}
+
+a[target=gallery] {
+    font-size: 16pt;
+
+}
+
+body [target=gallery]::before {
+    counter-increment: ch1;
+    content: counter(ch1) ".";
+}
+
+header h1 {
+    font: bold 42pt Verdana, sans-serif;
+    text-align: right;
+    color: white;
+    background-color: black;
+    margin-top: 8pt;
+    margin-right: 8pt;
+    margin-left: 80pt;
+    padding-right: 12pt;
+    background-image: radial-gradient(closest-side at 25pt 50%, white, black, white, black);
+    transform: skew(5deg, 0deg);
+}
+
+main p {
+    font: 12pt Arial, sans-serif;
+}
+
+main {
+    margin-left: 80pt;
+    padding-left: 20pt;
+    padding-right: 10pt;
+    border-left-width: 20pt;
+    border-left-style: solid;
+    border-left-color: grey;
+}
+
+div.tbl {
+    display: table;
+}
+
+div.tbl>div {
+    display: table-row;
+}
+
+div.tbl>div>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div a {
+    display: block;
+    margin-right: 10px;
+}
+
+aside {
+    float: right;
+    margin: 20px 0px 20px 20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 10px 10px 80pt;
+    padding: 5px;
+    border: 4px solid grey;
+    font: 16pt Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav a {
+    display: block;
+}
+
+nav a:link,
+nav a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+nav a:active,
+nav a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    transform: scale(1.2, 1.2) translateY(4px);
+    transition-duration: 0.5s;
+}
+
+nav div {
+    color: white;
+    background-color: grey;
+}
+
+div#discography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: skew(-5deg, 0deg);
+}
+
+div#discography>div {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 120px;
+}
+
+div#discography :hover {
+    transform: skew(10deg, 0deg) translateY(-10px);
+}
+
+footer {
+    text-align: right;
+
+    color: white;
+    background-color: grey;
+    margin-left: 120pt;
+    left: 0pt;
+    right: 0pt;
+    bottom: 0pt;
+}
